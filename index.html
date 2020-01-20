@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel='stylesheet' href='styles.css'/>
   <title>Since 1996</title>
 </head>
 <body>
 
+  <ul id='menu'>
+    <li class='menu-item'><a href="default.asp" class="menu-button">Home</a></li>
+    <li class='menu-item'><a href="news.asp" class="menu-button">News</a></li>
+    <li class='menu-item'><a href="contact.asp" class="menu-button">Contact</a></li>
+    <li class='menu-item'><a href="about.asp" class="menu-button">About</a></li>
+  </ul>
+
+<div class='page'?>
   <h1>Hi, I'm Zach Westhoff.</h1>
-   <hr/>
+   <!--- <hr/> --->
   <h2>About Me</h2>
-    <p>I'm a junior studying Applied Physics at Brigham Young University,
+    <p id='aboutintro'>I'm a junior studying Applied Physics at Brigham Young University,
       with minors in Japanese and, if this class goes well, Computer Science.
       I enjoy skiing, playing Smash Bros., and baking cookies to eat with my wife.
     After undergrad, I plan on attending law school.</p>
@@ -23,17 +32,17 @@
   <h2>Experience</h2>
   <ul>
     <li>Physics Research and Teaching Assistant, Sept 2019 - Dec 2019</li>
-    <ul>
+    <ul class='sublist'>
       <li>Assisted students in understanding physics concepts such as introductory thermodynamics and wave relationships.</li>
       <li>Coordinated weekly with other teaching assistants to prepare to address student questions.</li>
     </ul>
     <li>Intern Under Secretary of the U.S.-Japan Joint Committee, Jul - Aug 2019</li>
-    <ul>
+    <ul class='sublist'>
       <li>Wrote ten research and analysis papers on a variety of politically sensitive topics pertinent to the U.S.-Japan relationship to provide context for United States Forces, Japan positions.</li>
       <li>Organized more than 100 files by topic to create a database for internal military use.</li>
     </ul>
     <li>Japanese Teaching Assistant, Jan - Apr 2018</li>
-    <ul>
+    <ul class='sublist'>
       <li>Worked one-on-one with students through videoconference software to improve understanding of grammatical concepts and speaking ability.</li>
       <li>Administered assessments, assigned grades, and mediated student-administration concerns.</li>
     </ul>
@@ -43,8 +52,7 @@
     <p>For more information, check out <a href="www.linkedin.com/in/zachary-westhoff-538853149">my linkedin profile</a>.</p>
     <p>If you're interested in a more personal look, see my <a href="https://www.facebook.com/zach.westhoff.3">Facebook profile</a>.</p>
 
-
-
+  </div>
   </body>
   </html>
 

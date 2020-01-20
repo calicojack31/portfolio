@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #414141;
+  background-color: #EEEEEE;
+  font-size: 18px;
+}
+
+.page {
+  /*padding: 20px 20px;
+  margin: 40px 40px;*/
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: .25em;
+  font-size: 3em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+ul {
+  list-style-type: disk;
+}
+
+.sublist {
+  list-style-type: circle;
+}
+/*could probably have done ul ul { } as a descendant selector */
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: aqua;
+}
+a:visited:hover {
+  color: orange;
+}
+
+#aboutintro {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1em;
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #414141;
+  width: 100%;
+}
+
+.menu-item {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+/*i could have done #menu-button*/
+.menu-item a {
+  display: block;
+  padding: 8px;
+  color: #EEEEEE;
+
+}
