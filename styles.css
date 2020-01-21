@@ -11,12 +11,15 @@ body {
 .page {
   /*padding: 20px 20px;
   margin: 40px 40px;*/
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h1 {
   margin-top: 1em;
   margin-bottom: .25em;
   font-size: 3em;
+  color: #200686;
 }
 
 h2, h3, h4, h5, h6 {
@@ -25,6 +28,7 @@ h2, h3, h4, h5, h6 {
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
+  color: #200686;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -56,7 +60,6 @@ a:visited:hover {
 #aboutintro {
   margin-top: 0;
   padding-top: 0;
-  font-size: 1em;
 }
 
 #menu {
@@ -67,7 +70,7 @@ a:visited:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: navy;
+  background-color: #200686;
   width: 100%;
 }
 
@@ -82,5 +85,87 @@ a:visited:hover {
   display: block;
   padding: 8px;
   color: #EEEEEE;
-
 }
+
+.about-container {
+  display: flex;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-heading {
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  width: 100%;
+  padding: .25em 0;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.projects-heading,
+.experience-heading {
+  margin-top: 2em;
+}
+
+.experience-container {
+  diplay: flex;
+  justify-content: space-around;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .projects-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .experience {
+    flex-direction: row;
+    }
+  .experience-title {
+      display: flex;
+      width: 30%;
+    }
+  .experience-details {
+      display: flex;
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*here to scroll*/
